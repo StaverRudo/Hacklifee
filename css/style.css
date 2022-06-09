@@ -1,0 +1,1455 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* Это было обнуление настрое сайта(выше)  */
+/* Стилизация шапки сайта */
+.header_container{
+    max-width: 1160px;
+    padding: 0px 15px;     /*Оступ, чтобы не было прилипания на адаптиве */
+    margin: 0px auto;
+    box-sizing: content-box;    /*Оступ, чтобы не было прилипания на адаптиве */
+    display: flex;
+    min-height: 96px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header{
+    width: 100%;
+    height: 96px;
+    left: 0;
+    top: 0;
+}
+.header-left{
+    display: flex;
+    align-self: flex-end;
+}
+.header_menu{
+    margin: 0px 0px 22px 0px ;
+   
+}
+.header_logo{
+    margin: 0px 40px 11px 0px ;
+}
+.navigation :not(:last-child){
+    margin: 0px 40px 0px 0px;
+}
+.navigation-link{
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+/* identical to box height, or 100% */
+    color: #fff;
+}
+.header-right{
+    align-self: flex-end;
+}
+.header_icons{
+    margin: 0px 0px 9px 0px;
+}
+.header_icons :not(:last-child){
+    margin: 0px 12px 0px 0px;
+}
+.header_icon{
+    width: 36px;
+    height: 36px;
+}
+.m-menu-button{
+    padding: 5px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
+.menu-line{
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    flex-basis: 16px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 40px;
+}
+.mobile-buttons{
+    display: none;
+}
+/* Конец стилизации шапки сайта */
+@media(max-width: 996px) {
+    .header_container{
+        max-width: 960px; 
+    }
+    .navigation-link{
+        font-family: 'DM Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 300%;
+    /* identical to box height, or 100% */
+    }
+}
+
+@media(max-width: 786px) {
+    .mobile-buttons{
+        display: block;
+        z-index: 101;
+    }
+  
+    .header_menu{
+        display: none;
+    }
+    .header-left{
+        padding: 0px 0px 0px 40px;
+        
+    }
+    .header_logo{
+        display: flex;
+        z-index: 101;
+    }
+    .m-menu{
+        display: none;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 0);
+        padding-top: 145px;
+        z-index: 100;
+    }
+
+    .m-menu.active{
+        display: flex;
+    }
+    .mobile-buttons{
+        display: block;
+        z-index: 30px;
+    }
+    .m-menu-button{
+        display: block;
+    }
+    .header_menu{
+        display: block;
+        flex-direction: column ;
+        
+    }
+    .navigation{
+        display: block;
+        padding: 50px;
+        background-color: #fff; 
+        
+    }
+     .navigation-link{
+        display: block;
+        color: #000;
+        font-size: 30px;
+    } 
+     
+      .hr{
+        background-color: #fff;
+        width: 100%;
+        z-index: 100;
+      
+      }
+}
+/* Конец шапки сайта */
+/* ------------------------------
+------------------------------------
+------------------------------------
+------------------------------------
+-----------------------------------------
+-----------------------------------------------
+------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------------
+--------------------------------------------------------------
+------------------------------------------------------------------
+---------------------------------------------------------------------- */
+/* Начало блока hero */
+
+.hero {
+    display: flex;
+    padding: 133px 0px 43px 77px;
+}
+.hero_content{
+    position: relative;   width: 433px;
+
+    
+}
+.hero-title{
+    color: #fff;
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 119%;
+/* or 119% */
+
+    text-transform: uppercase;
+    padding: 0px 0px 43px 0px;
+}
+.hero-description{
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+/* or 160% */
+    color: #fff;
+    padding: 0px 0px 115px 0px;
+}
+.hero-button{
+    padding: 0px 0px 83px 0px
+    
+}
+.hero-link{
+    padding: 13px 53.5px 25px 53.5px;
+    text-decoration: none;
+    background-color: #8DFD1B;
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+/* identical to box height, or 100% */
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    cursor: pointer;
+}
+
+.hero-image{
+    position: relative;
+   
+}
+.hero-img{
+    position: absolute;
+    padding: 190px 0px 0px 0px;
+    left: 0;
+    top: -320px;
+    right: 0;
+    bottom: 0;
+    
+   
+}
+
+
+/* ------------------------------
+------------------------------------
+------------------------------------
+------------------------------------
+-----------------------------------------
+-----------------------------------------------
+------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------------
+--------------------------------------------------------------
+------------------------------------------------------------------
+---------------------------------------------------------------------- */
+/* Начало блока wave */
+
+.wave_container{
+    display: flex;
+    position: relative;
+    max-width: 1160px;
+    padding: 40px 0px 0px 0px;
+    margin: 0 auto;
+}
+.wave-left{
+    display: block;
+    flex-direction: column;
+}
+.wave-title_one{
+    
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 120%;
+    /* identical to box height, or 120% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.wave-title_two{
+  
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 120%;
+    /* identical to box height, or 120% */
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+.wave-right{
+  
+    display: block;
+    width: 553px;
+    justify-content: right;
+    margin: 0 auto;
+    
+}
+.wave-img{
+
+    padding: 86px 0px 0px 0px;
+}
+.wave-title_text{
+  
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 152%;
+    /* or 152% */
+
+    color: #8DFD1B;
+    border-left: 3px solid #8DFD1B;
+    padding: 0px 0px 0px 22px;
+}
+.wave-description_text{
+    
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 160% */
+    color: #FFFFFF;
+    padding: 27px 0px 40px 0px;
+}
+.wave_link{
+    padding: 10px 33px 16px 33px;
+    border: 1px solid #8DFD1B;
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+}
+@media(max-width:1200px){
+    .wave_container{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .wave-right{
+        padding: 90px 0px 0px 0px;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .wave-title_text{
+        flex-wrap: wrap;
+    }
+    .wave-description_text{
+        flex-wrap: wrap;
+    }
+}
+/* -----------------------------------------------
+------------------------------------
+------------------------------ */
+.artists{
+    display: flex;
+    margin-top: 200px;
+   
+}
+.artists_container{
+    position: relative;
+    border: 1px solid #fff;
+    
+}
+.artists-content_one{
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 111%;
+    /* identical to box height, or 111% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: -195px;
+}
+.artists-content_two{
+    overflow: hidden;
+    position: absolute;
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 111%;
+    /* identical to box height, or 111% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 590px;
+}
+@media(max-width: 1000px){
+    .artists-content_one{
+        display: none;
+    }
+    .artists-content_two{
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+}
+/* ------------------------------------
+----------------------------------------------------
+-----------------------------------------------
+----------------------------------------------------
+------------------------------------------------------------- */
+.artists_info{
+    margin: 120px 0px 0px 0px;
+}
+.artists_info_container{
+    display: flex;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+.card-artists{
+    text-align: center;
+}
+.card-artists :not(:last-child){
+    margin: 0px 60px 0px 0px;
+}
+.artists_info_title{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 150% */
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px 0px 80px 0px;
+}
+
+@media(max-width: 982px){
+    .artists_info_container{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .card-artists{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 678px){
+    .artists_info_image{
+        max-width: 400px;
+        height: 400px;
+    }
+}
+
+/* ------------------------------------
+----------------------------------------------------
+-----------------------------------------------
+----------------------------------------------------
+------------------------------------------------------------- */
+
+/* STORY_TITLE */
+.title_story{
+    text-align: center;
+}
+.story_title_color{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 123%;
+    /* identical to box height, or 123% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.story_title{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 120%;
+    /* identical to box height, or 120% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #A8A8A8;
+}
+/* STORY */
+.story{
+    
+    margin: 61px 0px 0px 40px;
+ 
+}
+.story_container{
+    display: flex;
+    max-width: 1160px;
+   
+}
+.tabs__item{
+    display: block;
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 100% */
+    color: #FFFFFF;
+    padding: 35px 134px 31px 28px;
+    white-space: nowrap;
+}
+.tabs_body{
+    display: none;
+    padding: 71px 60px 49px 60px;
+    background-color: #222222;
+}
+.story-info{
+    padding: 0px 60px 49px 40px;
+}
+.tabs_description{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 152%;
+    /* or 152% */
+    color: #8DFD1B;
+    border-left: 3px solid #8DFD1B;
+    padding: 0px 0px 0px 22px;
+}
+.tabs_text{
+    padding: 28px 0px 0px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 160% */
+
+
+    color: #FFFFFF;
+}
+
+
+.tabs_body{
+    position: relative;
+}
+
+.tabs_body:nth-child(1){
+    background-color: #222222;
+}
+.tabs_body:nth-child(1):before{
+    background-color: rgb(249, 6, 176);
+    
+}
+.tabs_body:nth-child(2){
+    background-color: #222222;
+    left: 0;
+}
+.tabs_body:nth-child(2):before{
+    background-color: rgb(6, 249, 55);
+  
+}
+.tabs_body:nth-child(3){
+    background-color: #222222;
+}
+.tabs_body:nth-child(3):before{
+    background-color: rgb(6, 87, 249);
+  
+}
+ 
+.tabs_body:target{
+    display: flex;
+}
+.tabs_item span{
+    position: relative;
+    z-index: 2;
+}
+.tabs_body:before {
+    content: "";
+    height: 50px;
+    position: absolute;
+    top: -50px;
+ 
+}
+.active-button {background-color: #222222;;}
+
+@media(max-width: 1100px){
+    .story{
+        padding: 0px 20px 0px 0px;
+    }
+    .story_container{
+        display: block;
+    }
+    .tabs{
+        text-align: center;
+    }
+}
+@media(max-width: 886px) {
+   .tabs_body{
+       flex-direction: column;
+   }
+   .tabs_images{
+       padding: 0px 0px 40px 50px;
+ 
+   }
+   .tabs_img{
+    width: 300px;
+    height: 300px;
+   }
+   .tabs{
+       text-align: center;
+   }
+   .tabs__items{
+       text-align: center;
+   }
+}
+
+
+/* gitara */
+.gitara{
+    overflow: hidden;
+    margin: 120px 0px 0px 0px;
+}
+
+/* roadmap */
+.roadmap{
+    position: relative;
+    margin: 120px 0px 0px 0px;
+}
+.roadmap_container{
+    max-width: 1280px;
+    height: 1370px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+.road_bgc-image{
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: -230px;
+}
+
+.road_bgc-image__two{
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 230px;
+    margin-left: 660px;
+}
+.road_bgc-image__thre{
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 930px;
+}
+
+
+/* __________________________________ */
+.title__roadmap{
+    margin: 0px 0px 61px 0px;
+ 
+}
+.title__roadmap__h1{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 120%;
+    /* identical to box height, or 120% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+
+/* 
+Карточки роадмап */
+.roadmap-cards{
+   padding: 45px 15px 45px 15px;
+   z-index: 5;
+}
+.roadmap-cards_top{
+    display: flex;
+    max-width: 540px;
+    background-color: #222222;
+    margin: 0 auto;
+    padding: 12px 0px 13px 12px;
+    border: 1px solid #8DFD1B;
+    z-index: 5;   
+}
+.roadmap-cards_top__title{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    /* identical to box height, or 102% */
+
+
+    color: #000000;
+    background-color: #8DFD1B;
+    padding: 8px 16px 8px 16px;
+    height: 45px;
+}
+.roadmap-cards_top__content{
+    padding: 0px 0px 0px 11.75px
+    
+}
+.roadmap-cards_top__text{
+    width: 440px;
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #8DFD1B;
+
+}
+.roadmap-cards_top__description{
+    max-width: 440px;
+    font-family: 'DM Mono','sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:  173%;
+    /* identical to box height, or 173% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  
+}
+
+
+.roadmap-cards_bottom{
+    display: flex;
+    max-width: 540px;
+    background-color: #222222;
+    margin: 0 auto;
+    padding: 12px 0px 13px 12px;
+    border: 1px solid #8DFD1B;
+}
+
+.roadmap-cards_bottom__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height:  291%;
+    /* identical to box height, or 291% */
+    color: #FFFFFF;
+    padding: 0px 0px 16.37px 34.25px;
+}
+.roadmap-cards_bottom__description{
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 233%;
+    /* or 233% */
+    color: #FFFFFF;
+    padding: 0px 0px 7px 0px;
+}
+
+.roadmap-cards_bottom__image{
+    padding: 30px 0px 0px 87px;
+}
+
+ /* roadmap-lines  */
+
+ .roadmap-lines{
+     display: flex;
+     max-width: 540px;
+     margin: 0 auto;
+ }
+
+.roadmap-line_one{
+    width: 50%;
+    height: 40px;
+    border-right: 1px solid #8DFD1B;
+}
+.roadmap-line_two{
+  
+    width: 50%;
+    height: 40px;
+    border-left: 1px solid #8DFD1B;
+}
+
+
+/* logoholder */
+.logoholder{
+    position: relative;
+
+}
+.logoholder-title{
+    text-align: center;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+}
+.logoholder-title_one{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 109%;
+    /* identical to box height, or 109% */
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #8DFD1B;
+}
+.logoholder-images{
+    position: absolute;
+    max-width: 1300px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 70px;
+    margin-left: -38px;
+}
+.logoholder-images :not(:last-child){
+    padding: 0px 85px 0px 0px;
+}
+.logoholder-top{
+    margin: 0px 0px 60px 0px;
+}
+
+
+/* asked */
+.asked{
+    margin: 100px 0px 0px 0px;
+   
+}
+.asked_container{
+    display: flex;
+    max-width: 1160px;
+    border: 1px solid red;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
+}
+.asked-left_title{
+    margin: 0px 0px 51px 0px;
+}
+.asked-left_title__one{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height:  120%;
+    /* identical to box height, or 120% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+.asked-left_title__two{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height:  120%;
+    /* identical to box height, or 120% */
+
+    text-transform: uppercase;
+
+    color: #A8A8A8;
+}
+.asked-left_title__three{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height:  120%;
+    /* identical to box height, or 120% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+/* asked-right */
+.asked-right{
+    background-color: #222222;
+    max-width: 580px;
+    height: 478px;
+    padding: 0px 0px 0px 30px;
+   
+}
+.asked__title{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 150% */
+    color: #FFFFFF;
+}
+.asked_title_size{
+    padding: 24px 0px 25px 0px;
+}
+.asked__text{
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 160% */
+
+
+    color: #C4C4C4;
+}
+
+@media(max-width: 960px){
+    .asked_container{
+        flex-direction: column;
+
+    }
+    .asked-left{
+        margin: 0 auto;
+        padding: 0px 0px 40px 0px;
+    }
+    .asked-right{
+        margin: 0 auto;
+    }
+}
+
+
+/* team */
+.team_content{
+    padding: 115px 0px 0px 0px;
+}
+.team{
+    position: relative;
+    display: flex;
+    border: 1px solid red;
+    margin-left: -200px;
+}
+
+
+
+.team_title{
+    position: absolute;
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 111%;
+    /* identical to box height, or 111% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+}
+.team_two{
+    position: relative;
+    display: flex;
+    border: 1px solid #fff;
+}
+
+.team_title__two{
+    position: absolute;
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 111%;
+    /* identical to box height, or 111% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    top: 0;
+    left: 23%;
+    bottom: 0;
+    right: 0;
+
+}
+.team_three{
+    position: relative;
+    display: flex;
+    border: 1px solid green;
+}
+.team_title__three{
+    position: absolute;
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 111%;
+    /* identical to box height, or 111% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    top: 0;
+    left: 60.7%;
+    bottom: 0;
+    right: 0;
+}
+
+@media(max-width: 900px){
+    .team_title{
+        display: none;
+    }
+    .team_title__three{
+        display: none;
+    }
+}
+
+/* TEAM-info */
+
+.team-info{
+    margin: 122px 0px 236px 0px;
+}
+.team-info_container{
+    display: flex;
+    max-width: 1160px;
+    border: 1px  solid red;
+    margin: 0px 0px 0px 70px;
+    padding: 0px 15px 0px 0px ;
+}
+
+
+
+.team-info_one{
+    text-align: center;
+    margin: 0px 100px 0px 0px;
+    padding: 0px 15px 0px 0px;
+}
+
+
+.team-info_title{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 132%;
+    /* identical to box height, or 132% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    padding: 19px 0px 52px 0px;
+
+}
+
+
+.team-info_decsription{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height:  109%;
+    /* identical to box height, or 109% */
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #8DFD1B;
+    padding: 0px 0px 22px 0px;
+}
+.team-info_icons__one{
+    padding: 0px 12px 22px 0px;
+}
+
+
+@media(max-width: 1200px){
+    .team-info_container{
+        flex-direction: column;
+    }
+    .team-info_one{
+        padding: 50px 0px 0px 0px; 
+    }
+    .team-info_image{
+        width: 400px;
+
+    }
+}
+
+@media(max-width: 570px){
+    .team-info_image{
+        width: 250px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .team-info{
+    margin: 200px 0px 0px 0px ;
+}
+
+.team-info_container{
+    display: flex;
+    max-width: 1160px;
+    border: 1px solid #fff;
+    margin: 0px 0px 0px 30px;
+}
+.team-info_container :not(:last-child){
+    margin: 0px 100px 0px 0px;
+}
+
+
+.team-info__card__one :not(:last-child){
+    margin: 0px 0px 0px 0px;
+}
+.team-info__card__one{
+    max-width: 320px;
+    text-align: center;
+}
+
+.team-info_title{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 132%;
+    /* identical to box height, or 132% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    padding: 19px 0px 18px 0px;
+}
+
+.team-info__description{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 109%;
+    /* identical to box height, or 109% */
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8DFD1B;
+    padding: 0px 0px 22px 0px;
+}
+.team-info__icons{
+    margin: 0px 0px 22px 0px;
+}
+.team-info__icons :not(:last-child){
+
+    margin: 0px 12px 0px 0px;
+
+}
+
+.team-info__text{
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 160% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    margin: 22px 0px 0px 0px;
+
+}
+
+@media(max-width: 1200px) {
+    .team-info_container{
+      display: block;
+      border: 1px solid red;
+      justify-content: center;
+    }
+    .team-info__card__one{
+       margin: 0 auto;
+    }
+   
+} */
+
+
+
+/* JOIN */
+
+
+.join{
+    margin: 236px 0px 0px 0px;
+}
+.join_container{
+    display: flex;
+    max-width: 1160px;
+    padding: 0px 0px 0px 100px;
+   
+}
+
+.join-left{
+    width: 300px;
+    border: 1px solid red;
+}
+.join-right{
+    width: 200px;
+    border: 1px solid #fff;
+}
+.join-left__title{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 119%;
+    /* identical to box height, or 119% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin: 0px 0px 34px 0px;
+
+}
+
+.join-left__title-color{
+    font-family: 'Audiowide', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 119%;
+    /* identical to box height, or 119% */
+
+    text-transform: uppercase;
+
+    color: #8DFD1B;
+    
+}
+.join_content{
+    margin: 0px 0px 54px 0px;
+}
+
+.join-left__button{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #000000;
+    background-color: #8DFD1B;
+    padding: 14px 33px 13px 33px;
+   
+   
+}
+
+.join-left__image{
+    padding: 0px 9px 0px 0px;
+}
+
+.join-right{
+    padding: 0px 0px 0px 175px;
+}
+
+
+@media(max-width: 1200px){
+    .join_container{
+        flex-direction: column;
+    }
+    .join-left{
+        margin: 0 auto;
+    }
+   
+    
+    .join-right{
+        margin: 0 auto;
+        padding: 100px 0px 0px 0px;
+        text-align: center;
+      }
+    .join-left__image{
+        margin: 0 auto;
+    }
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    max-height: 338px;
+    background-color: #42006A;
+    margin: 118px 0px 0px 0px;
+    padding: 101px 0px 0px 0px;
+}
+
+.footer_container{
+    display: flex;
+    max-width: 1160px;
+    max-height: 137px;
+    border: 1px solid #fff;
+    margin: 0px 0px 0px 200px;
+}
+.footer_block-image{
+    margin: 0px 0px 70px 0px;
+}
+.footer_block__one-text{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 158%;
+    /* identical to box height, or 158% */
+
+
+    color: #FFFFFF;
+}
+
+.footer_block__two{
+    padding: 0px 0px 0px 64px;
+}
+
+.footer-menu__link-a{
+    display: block;
+    cursor: pointer;
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 158%;
+    /* identical to box height, or 158% */
+
+
+    color: #FFFFFF;
+    margin: 0px 0px 29px 0px;
+}
+
+
+
+
+.footer_block__content{
+    padding: 0px 0px 0px 100px;
+}
+.footer_block__content__one{
+    display: block;
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 118%;
+    /* identical to box height, or 118% */
+
+
+    color: #FFFFFF;
+    margin: 0px 0px 29px 0px;
+}
+
+.footer_block__content__two{
+    font-family: 'DM Mono', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 118%;
+    /* identical to box height, or 118% */
+
+
+    color: #FFFFFF;
+}
+
+.footer_block__icons{
+    padding: 0px 0px 0px 100px;
+}
+.footer_block__icon{
+    padding: 0px 12px 0px 0px;
+}
+
+@media(max-width:1200px){
+    .footer_container{
+        flex-direction: column;
+    }
+}
