@@ -282,9 +282,7 @@ body {
 }
 
 @media(max-width: 700px) {
-    .hero{
-        border: 1px solid red;
-    }
+   
     .wave-title_one{
         flex-wrap: wrap;
         font-size: 30px;
@@ -420,6 +418,12 @@ body {
 
 }
 
+@media(max-width: 700px){
+    .wave-img{
+        max-width: 200px;
+    }
+}
+
 
 /* -----------------------------------------------
 ------------------------------------
@@ -517,8 +521,8 @@ body {
 
 @media(max-width: 678px){
     .artists_info_image{
-        max-width: 400px;
-        height: 400px;
+        max-width: 250px;
+        height: 250px;
     }
 }
 
@@ -669,22 +673,30 @@ body {
     }
 }
 @media(max-width: 886px) {
+    .story-info{
+        padding: 0px 0px 0px 0px;
+    }
    .tabs_body{
        flex-direction: column;
+       padding: 20px 5px 20px 5px;
    }
    .tabs_images{
-       padding: 0px 0px 40px 50px;
+     margin: 0 auto;
  
    }
    .tabs_img{
-    width: 300px;
-    height: 300px;
+    max-width: 200px;
+    height: 200px;
    }
    .tabs{
        text-align: center;
    }
    .tabs__items{
        text-align: center;
+   }
+   .tabs_description{
+       margin: 20px 0px 0px 0px;
+       font-size: 15px;
    }
 }
 
@@ -704,7 +716,7 @@ body {
     max-width: 1280px;
     height: 1370px;
     margin: 0 auto;
-    border: 1px solid #fff;
+   
 }
 .road_bgc-image{
     position: absolute;
@@ -765,7 +777,7 @@ body {
 Карточки роадмап */
 .roadmap-cards{
    padding: 45px 15px 45px 15px;
-   z-index: 5;
+  
 }
 .roadmap-cards_top{
     display: flex;
@@ -774,7 +786,7 @@ body {
     margin: 0 auto;
     padding: 12px 0px 13px 12px;
     border: 1px solid #8DFD1B;
-    z-index: 5;   
+   
 }
 .roadmap-cards_top__title{
     font-family: 'DM Mono', 'sans-serif';
@@ -795,7 +807,7 @@ body {
     
 }
 .roadmap-cards_top__text{
-    width: 440px;
+    max-width: 440px;
     font-family: 'DM Mono', 'sans-serif';
     font-style: normal;
     font-weight: 400;
@@ -878,6 +890,25 @@ body {
     height: 40px;
     border-left: 1px solid #8DFD1B;
 }
+@media(max-width: 700px){
+    .roadmap-cards_bottom{
+        display: block;
+    }
+    .roadmap-cards_bottom__image{
+        display: flex;
+       
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .roadmap-cards_bottom__img{
+        min-width: 200px;
+        padding: 0px 0px 0px 0px;
+        margin-left: 0 auto;
+        
+    }
+}
+
+
 
 
 /* logoholder */
@@ -929,7 +960,7 @@ body {
 .asked_container{
     display: flex;
     max-width: 1160px;
-    border: 1px solid red;
+   
     padding: 0px 20px 0px 20px;
     justify-content: space-between;
 }
@@ -1008,16 +1039,28 @@ body {
 }
 
 @media(max-width: 960px){
+    .asked{
+        margin: 520px 0px 0px 0px;
+    }
     .asked_container{
         flex-direction: column;
 
     }
     .asked-left{
         margin: 0 auto;
-        padding: 0px 0px 40px 0px;
+        
+    }
+    .asked-left_image{
+        padding: 0px 0px 50px 0px;
+    }
+    .asked-left_img{
+        max-width: 270px;
+        
     }
     .asked-right{
+        height: 100%;
         margin: 0 auto;
+        padding: 30px 10px 30px 10px;
     }
 }
 
@@ -1029,7 +1072,7 @@ body {
 .team{
     position: relative;
     display: flex;
-    border: 1px solid red;
+
     margin-left: -200px;
 }
 
@@ -1056,7 +1099,7 @@ body {
 .team_two{
     position: relative;
     display: flex;
-    border: 1px solid #fff;
+   
 }
 
 .team_title__two{
@@ -1078,7 +1121,7 @@ body {
 .team_three{
     position: relative;
     display: flex;
-    border: 1px solid green;
+  
 }
 .team_title__three{
     position: absolute;
@@ -1108,12 +1151,14 @@ body {
 /* TEAM-info */
 
 .team-info{
+    overflow: hidden;
     margin: 122px 0px 236px 0px;
 }
 .team-info_container{
     display: flex;
+    overflow: hidden;
     max-width: 1160px;
-    border: 1px  solid red;
+   
     margin: 0px 0px 0px 70px;
     padding: 0px 15px 0px 0px ;
 }
@@ -1183,6 +1228,12 @@ body {
 
     }
 }
+@media(max-width: 720px){
+    .team-info{
+
+        margin: 522px 0px 236px 0px;
+    }
+}
 
 
 
@@ -1225,14 +1276,14 @@ body {
     line-height: 132%;
     /* identical to box height, or 132% */
 
-    text-align: center;
+    /* text-align: center;
     text-transform: uppercase;
 
     color: #FFFFFF;
     padding: 19px 0px 18px 0px;
-}
+} */
 
-.team-info__description{
+/* .team-info__description{
     font-family: 'DM Mono', 'sans-serif';
     font-style: normal;
     font-weight: 400;
@@ -1240,7 +1291,7 @@ body {
     line-height: 109%;
     /* identical to box height, or 109% */
 
-    text-align: center;
+    /* text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #8DFD1B;
@@ -1263,7 +1314,7 @@ body {
     line-height: 160%;
     /* or 160% */
 
-    text-align: center;
+    /* text-align: center;
 
     color: #FFFFFF;
     margin: 22px 0px 0px 0px;
@@ -1278,9 +1329,9 @@ body {
     }
     .team-info__card__one{
        margin: 0 auto;
-    }
+    } */
    
-} */
+/* } */ 
 
 
 
@@ -1299,11 +1350,11 @@ body {
 
 .join-left{
     width: 300px;
-    border: 1px solid red;
+   
 }
 .join-right{
     width: 200px;
-    border: 1px solid #fff;
+   
 }
 .join-left__title{
     font-family: 'Audiowide', 'sans-serif';
@@ -1366,7 +1417,7 @@ body {
 
 @media(max-width: 1200px){
     .join_container{
-        flex-direction: column;
+        flex-direction: block;
     }
     .join-left{
         margin: 0 auto;
@@ -1381,7 +1432,9 @@ body {
     .join-left__image{
         margin: 0 auto;
     }
+
 }
+
 
 /* FOOTER */
 .footer{
