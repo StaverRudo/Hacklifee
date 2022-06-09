@@ -129,6 +129,9 @@ body {
         line-height: 300%;
     /* identical to box height, or 100% */
     }
+    .header_icons{
+        display: none;
+    }
 }
 
 @media(max-width: 786px) {
@@ -278,6 +281,19 @@ body {
    
 }
 
+@media(max-width: 700px) {
+    .hero{
+        border: 1px solid red;
+    }
+    .wave-title_one{
+        font-size: 40px;
+    }
+    .wave-title_two{
+        font-size: 40px;
+        flex-wrap: wrap;
+    }
+}
+
 
 /* ------------------------------
 ------------------------------------
@@ -329,7 +345,7 @@ body {
 .wave-right{
   
     display: block;
-    width: 553px;
+    max-width: 553px;
     justify-content: right;
     margin: 0 auto;
     
@@ -386,7 +402,7 @@ body {
         flex-wrap: wrap;
     }
     .wave-right{
-        padding: 90px 0px 0px 0px;
+        padding: 90px 5px 0px 5px;
         text-align: center;
         justify-content: center;
         margin: 0 auto;
@@ -397,8 +413,13 @@ body {
     }
     .wave-description_text{
         flex-wrap: wrap;
+        padding-bottom: 40px;
     }
+  
+
 }
+
+
 /* -----------------------------------------------
 ------------------------------------
 ------------------------------ */
