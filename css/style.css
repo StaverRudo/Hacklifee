@@ -286,10 +286,11 @@ body {
         border: 1px solid red;
     }
     .wave-title_one{
-        font-size: 40px;
+        flex-wrap: wrap;
+        font-size: 30px;
     }
     .wave-title_two{
-        font-size: 40px;
+        font-size: 30px;
         flex-wrap: wrap;
     }
 }
@@ -466,8 +467,10 @@ body {
     }
     .artists-content_two{
         margin: 0 auto;
-        padding-left: 100px;
+        font-size: 40px;
+        margin: 0px 0px 0px 30px;
     }
+
 }
 /* ------------------------------------
 ----------------------------------------------------
